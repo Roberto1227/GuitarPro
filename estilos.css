@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0f0; /* Fondo suave para toda la página */
 }
 
 header {
@@ -21,7 +22,7 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Puedes ajustar esta medida según tus necesidades */
+    height: 50px;
     width: auto;
 }
 
@@ -34,10 +35,15 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700; /* Negrita para hacer los enlaces más visibles */
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
 }
 
 .burger {
@@ -56,11 +62,26 @@ nav {
 main {
     padding: 20px;
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .intro {
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Fondo degradado */
+    color: #fff;
     padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .buttons {
@@ -109,3 +130,4 @@ footer {
         display: block;
     }
 }
+
