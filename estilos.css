@@ -18,15 +18,16 @@ header .navbar-brand img {
     border-radius: 10px;
 }
 
-.title {
-    font-family: 'Lavish', sans-serif;
+.title.bienvenidos {
+    font-family: 'ASTRID', sans-serif;
     font-size: 3em;
     font-weight: bold;
     color: #8B4513; /* Color café */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra más oscura */
 }
 
-.intro p {
+.caminotexto {
+    font-family: 'ASTRID', sans-serif;
     font-size: 1.2em;
     color: #000000; /* Texto en negro para contraste */
 }
