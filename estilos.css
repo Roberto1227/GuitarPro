@@ -9,12 +9,16 @@
     --secondary-color: #000000; /* Negro */
     --accent-color: #FFD700; /* Dorado */
     --highlight-color: #FF0000; /* Rojo */
+    --vintage-background: #FFE4B5; /* Color vintage brillante */
 }
 
 /* Estilos generales */
 body, html {
     font-family: 'Ropa Sans Pro', sans-serif;
-    background-color: var(--primary-color);
+    background-color: var(--vintage-background);
+    background-image: url('imagenes/vintage-pattern.png'); /* Imagen de fondo con manchas */
+    background-blend-mode: multiply;
+    background-size: cover;
     color: var(--secondary-color);
 }
 
