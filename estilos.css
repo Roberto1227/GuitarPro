@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Broadway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rennie+Mackintosh&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap'); /* Nueva tipografía */
 
 /* Variables de colores */
 :root {
@@ -10,6 +11,7 @@
     --accent-color: #FFD700; /* Dorado */
     --highlight-color: #FF0000; /* Rojo */
     --vintage-background: #FFE4B5; /* Color vintage brillante */
+    --mancha-color: #A52A2A; /* Color café */
 }
 
 /* Estilos generales */
@@ -45,7 +47,8 @@ body, html {
 }
 
 .intro h1 {
-    color: var(--highlight-color);
+    color: var(--secondary-color); /* Letras en negro */
+    font-family: 'Chilanka', cursive; /* Nueva tipografía para título */
 }
 
 .buttons .btn {
