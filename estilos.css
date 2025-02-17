@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #654321, #d2b48c); /* Fondo marrón con degradado */
+    background: linear-gradient(to bottom, #ff7f50, #d2691e); /* Fondo ámbar con degradado */
     color: #333; /* Texto oscuro */
     font-family: 'Georgia', serif;
     margin: 0;
@@ -39,7 +39,7 @@ header {
 .intro h1 {
     font-size: 3rem;
     color: #f5deb3; /* Crema */
-    font-family: 'Georgia', serif;
+    font-family: 'Dancing Script', cursive; /* Nueva fuente */
     text-shadow: 2px 2px 4px #cd853f; /* Sombra marrón */
 }
 
