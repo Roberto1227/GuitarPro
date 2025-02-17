@@ -1,15 +1,15 @@
 body {
-    background: linear-gradient(to bottom, #001f3f, #0074D9); /* Fondo azul con degradado */
-    color: #fff; /* Texto blanco */
-    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #654321, #d2b48c); /* Fondo marrón con degradado */
+    color: #333; /* Texto oscuro */
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #0074D9; /* Azul vivo */
+    background: #8b4513; /* Marrón vivo */
     padding: 20px 0;
-    border-bottom: 4px solid #7FDBFF; /* Azul claro */
+    border-bottom: 4px solid #deb887; /* Marrón claro */
 }
 
 .navbar-brand img {
@@ -17,19 +17,19 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #7FDBFF; /* Azul claro */
+    color: #deb887; /* Marrón claro */
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #FFDC00; /* Amarillo brillante */
+    color: #f5deb3; /* Crema */
 }
 
 .intro {
     background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
     padding: 50px;
-    border: 2px solid #FF4136; /* Rojo vibrante */
+    border: 2px solid #cd853f; /* Marrón vibrante */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     position: relative;
@@ -38,20 +38,20 @@ header {
 
 .intro h1 {
     font-size: 3rem;
-    color: #FFDC00; /* Amarillo brillante */
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px #FF4136; /* Sombra roja */
+    color: #f5deb3; /* Crema */
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 4px #cd853f; /* Sombra marrón */
 }
 
 .intro p {
     font-size: 1.5rem;
-    color: #7FDBFF; /* Azul claro */
+    color: #deb887; /* Marrón claro */
 }
 
 .buttons .btn {
-    background-color: #FF4136; /* Rojo vibrante */
+    background-color: #cd853f; /* Marrón vibrante */
     color: #fff;
-    border: 3px solid #FFDC00; /* Borde amarillo brillante */
+    border: 3px solid #f5deb3; /* Borde crema */
     font-weight: bold;
     font-size: 1.2rem;
     padding: 15px 30px;
@@ -60,16 +60,16 @@ header {
 }
 
 .buttons .btn:hover {
-    background-color: #FFDC00; /* Amarillo brillante */
-    color: #001f3f; /* Azul oscuro */
-    border: 3px solid #FF4136; /* Borde rojo vibrante */
+    background-color: #f5deb3; /* Crema */
+    color: #654321; /* Marrón oscuro */
+    border: 3px solid #cd853f; /* Borde marrón vibrante */
 }
 
 footer {
-    background: #0074D9; /* Azul vivo */
-    color: #7FDBFF; /* Azul claro */
+    background: #8b4513; /* Marrón vivo */
+    color: #deb887; /* Marrón claro */
     padding: 20px 0;
-    border-top: 4px solid #7FDBFF; /* Azul claro */
+    border-top: 4px solid #deb887; /* Marrón claro */
 }
 
 footer p {
