@@ -1,6 +1,10 @@
 body {
     background-color: #D2B48C; /* Tono café clásico */
     font-family: 'Roboto', sans-serif;
+    background-image: url('URL_DE_LA_IMAGEN'); /* URL de la imagen con manchas de rasgueo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header .navbar-brand img {
