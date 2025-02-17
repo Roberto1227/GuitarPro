@@ -1,7 +1,7 @@
 body {
     background-color: #CC6F57; /* Tono café clásico */
     font-family: 'Roboto', sans-serif;
-    background-image: url('imagen.avif'); /* URL de la imagen guardada en tu proyecto */
+    background-image: url('https://www.freepik.es/imagen-ia-premium/microfono-contacto-guitarra-acustica-acogedor-cafe-luces-borrosas-fondo-renderizado-3d_94836713.htm'); /* URL de la imagen de Freepik */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,7 +13,7 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(245, 245, 245, 0.8); /* Fondo claro con opacidad para contraste */
+    background-color: rgba(51, 54, 77, 0.9); /* Fondo oscuro con opacidad para mejor contraste */
     padding: 40px;
     border-radius: 10px;
 }
