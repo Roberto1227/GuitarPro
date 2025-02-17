@@ -1,71 +1,55 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuitarPro</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <!-- Menú de navegación -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="imagenes/Logo.png" height="50" alt="GuitarPro Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="lecciones.html">Lecciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+body {
+    background-color: #CC6F57; /* Tono café clásico */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('imagen.avif'); /* URL de la imagen guardada en tu proyecto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; /* Texto blanco para mejor contraste */
+}
 
-    <!-- Contenido principal -->
-    <main class="container text-center mt-5">
-        <section class="intro bg-light p-5 rounded">
-            <h1>Bienvenidos a GuitarPro</h1>
-            <p>Tu camino para aprender a tocar la guitarra empieza aquí.</p>
-            <div class="buttons mt-3">
-                <a href="Lecciones.html" class="btn btn-dark m-2">Lecciones</a>
-                <a href="Historia.html" class="btn btn-dark m-2">Historia</a>
-            </div>
-            <!-- Añadir rayos animados -->
-            <div class="lightning"></div>
-            <div class="lightning"></div>
-            <div class="lightning"></div>
-        </section>
-    </main>
+header .navbar-brand img {
+    height: 50px;
+}
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 GuitarPro. Todos los derechos reservados.</p>
-    </footer>
+.intro {
+    background-color: rgba(51, 54, 77, 0.9); /* Fondo oscuro con opacidad para mejor contraste */
+    padding: 40px;
+    border-radius: 10px;
+}
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+.intro h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    color: #FFFFFF; /* Texto en blanco */
+    font-size: 3em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+.buttons .btn {
+    background-color: #6F9984; /* Color verde vintage */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #4F6466; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+footer {
+    background-color: #33364D;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+}
 
 

@@ -1,7 +1,7 @@
 body {
     background-color: #CC6F57; /* Tono café clásico */
     font-family: 'Roboto', sans-serif;
-    background-image: url('URL_DE_LA_IMAGEN'); /* URL de la imagen con manchas de rasgueo */
+    background-image: url('imagen.avif'); /* URL de la imagen guardada en tu proyecto */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,20 +13,20 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con mayor opacidad para mejor contraste */
+    background-color: rgba(51, 54, 77, 0.9); /* Fondo oscuro con opacidad para mejor contraste */
     padding: 40px;
     border-radius: 10px;
 }
 
 .intro h1 {
     font-family: 'Black Han Sans', sans-serif;
-    color: #33364D; /* Texto en color oscuro */
+    color: #FFFFFF; /* Texto en blanco */
     font-size: 3em;
 }
 
 .intro p {
     font-size: 1.2em;
-    color: #33364D; /* Texto en color oscuro */
+    color: #FFFFFF; /* Texto en blanco */
 }
 
 .buttons .btn {
