@@ -1,36 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0f0f0f; /* Fondo oscuro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1f1f1f; /* Fondo oscuro para el encabezado */
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 2px solid #333; /* Línea en el borde inferior */
+    background: #3e3e3e;
+    padding: 20px 0;
+    border-bottom: 4px solid #d4af37; /* Añadir un toque dorado */
 }
 
-.electric-container {
-    background: url('path/to/your/lightning-image.png') no-repeat center center;
-    background-size: cover; /* Ajuste de imagen de fondo */
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 600px;
-    border: 2px solid #1f1f1f;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Resplandor de rayos */
-    text-align: center;
+.navbar-brand img {
+    height: 60px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d4af37; /* Color dorado */
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffdd44;
+}
+
+.intro {
+    background: #ffffff;
+    padding: 50px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #3e3e3e;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px #d4af37;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.buttons .btn {
+    background-color: #3e3e3e;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    font-weight: bold;
+}
+
+.buttons .btn:hover {
+    background-color: #d4af37;
+    color: #3e3e3e;
 }
 
 footer {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: #3e3e3e;
+    color: #d4af37;
+    padding: 20px 0;
+    border-top: 4px solid #d4af37;
+}
+
+footer p {
+    margin: 0;
 }
