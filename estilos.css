@@ -77,15 +77,6 @@ footer p {
     font-size: 1rem;
 }
 
-/* Animaciones de rayos */
-.lightning {
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    background: url('imagenes/rayo.png') no-repeat center/contain;
-    animation: fall 5s linear infinite;
-}
-
 @keyframes fall {
     0% {
         top: -300px;
