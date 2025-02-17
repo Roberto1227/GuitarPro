@@ -1,6 +1,11 @@
 body {
-    background-color: #F5E8C7; /* Fondo vintage resplandeciente */
+    background-color: #CC6F57; /* Tono café clásico */
     font-family: 'Roboto', sans-serif;
+    background-image: url('imagen.avif'); /* URL de la imagen guardada en tu proyecto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; /* Texto blanco para asegurar buen contraste */
 }
 
 header .navbar-brand img {
@@ -8,7 +13,7 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(245, 245, 245, 0.9); /* Fondo claro con opacidad para contraste */
+    background-color: rgba(245, 245, 245, 0.8); /* Fondo claro con opacidad para contraste */
     padding: 40px;
     border-radius: 10px;
 }
@@ -39,7 +44,7 @@ header .navbar-brand img {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #33364D;
     color: #FFFFFF;
 }
 
