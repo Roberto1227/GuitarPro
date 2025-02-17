@@ -1,5 +1,7 @@
 body {
-    background-color: #6F4E37; /* Fondo café */
+    background-image: url('ruta/a/tu/imagen.jpg'); /* Fondo de madera */
+    background-size: cover; /* La imagen cubre toda la página */
+    background-position: center; /* Centrado */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,7 +10,9 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: #F5F5F5; /* Fondo claro para contraste */
+    background-color: rgba(245, 245, 245, 0.9); /* Fondo claro con opacidad para contraste */
+    padding: 40px;
+    border-radius: 10px;
 }
 
 .intro h1 {
