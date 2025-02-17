@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f; /* Fondo oscuro para el encabezado */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #333; /* Línea en el borde inferior */
+}
+
+.electric-container {
+    background: url('path/to/your/lightning-image.png') no-repeat center center;
+    background-size: cover; /* Ajuste de imagen de fondo */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border: 2px solid #1f1f1f;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Resplandor de rayos */
+    text-align: center;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
