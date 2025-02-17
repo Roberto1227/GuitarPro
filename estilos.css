@@ -13,20 +13,20 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(51, 54, 77, 0.9); /* Fondo oscuro con opacidad para mejor contraste */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con mayor opacidad para mejor contraste */
     padding: 40px;
     border-radius: 10px;
 }
 
 .intro h1 {
     font-family: 'Black Han Sans', sans-serif;
-    color: #FFFFFF; /* Texto en blanco */
+    color: #33364D; /* Texto en color oscuro */
     font-size: 3em;
 }
 
 .intro p {
     font-size: 1.2em;
-    color: #FFFFFF; /* Texto en blanco */
+    color: #33364D; /* Texto en color oscuro */
 }
 
 .buttons .btn {
