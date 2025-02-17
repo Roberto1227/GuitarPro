@@ -18,12 +18,16 @@ header .navbar-brand img {
     border-radius: 10px;
 }
 
-.intro h1 {
+.title {
     font-family: 'Black Han Sans', sans-serif;
-    color: #8B4513; /* Color café */
+    color: #A52A2A; /* Color café rojizo similar al texto ROCK */
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para hacer el texto más llamativo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para hacer el texto más llamativo */
+    background: linear-gradient(90deg, #A52A2A, #FFDD44, #A52A2A); /* Gradiente de color para franjas */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
 }
 
 .intro p {
