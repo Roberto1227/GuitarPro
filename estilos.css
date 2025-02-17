@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #000000; /* Texto en negro para asegurar buen contraste */
 }
 
 header .navbar-brand img {
