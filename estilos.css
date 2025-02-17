@@ -1,134 +1,45 @@
-/* Importar tipografías */
-@import url('https://fonts.googleapis.com/css2?family=Broadway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rennie+Mackintosh&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap'); /* Nueva tipografía */
-
-/* Variables de colores */
-:root {
-    --primary-color: #FFFFFF; /* Blanco */
-    --secondary-color: #000000; /* Negro */
-    --accent-color: #FFD700; /* Dorado */
-    --highlight-color: #FF0000; /* Rojo */
-    --vintage-background: #FFE4B5; /* Color vintage brillante */
-    --mancha-color: #A52A2A; /* Color café */
+body {
+    background-color: #6F4E37; /* Fondo café */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos generales */
-body, html {
-    font-family: 'Ropa Sans Pro', sans-serif;
-    background-color: var(--vintage-background);
-    background-image: url('imagenes/vintage-pattern.png'); /* Imagen de fondo con manchas */
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: var(--secondary-color);
+header .navbar-brand img {
+    height: 50px;
 }
 
-/* Menú de navegación */
-.navbar {
-    background-color: var(--secondary-color);
-}
-
-.nav-link {
-    font-family: 'Rennie Mackintosh', sans-serif;
-    color: var(--primary-color);
-}
-
-.nav-link:hover {
-    color: var(--highlight-color);
-}
-
-/* Contenido principal */
 .intro {
-    font-family: 'Broadway', sans-serif;
-    border: 3px solid var(--accent-color);
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    background-color: #F5F5F5; /* Fondo claro para contraste */
 }
 
 .intro h1 {
-    color: var(--secondary-color); /* Letras en negro */
-    font-family: 'Chilanka', cursive; /* Nueva tipografía para título */
+    font-family: 'Black Han Sans', sans-serif;
+    color: #000000; /* Texto en negro */
+    font-size: 3em;
+}
+
+.intro p {
+    font-size: 1.2em;
 }
 
 .buttons .btn {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
     border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .buttons .btn:hover {
-    background-color: var(--highlight-color);
-    color: var(--primary-color);
+    background-color: #333333; /* Color de fondo al pasar el mouse */
 }
 
-/* Estilos para rayos animados */
-.lightning {
-    width: 50px;
-    height: 50px;
-    background: var(--highlight-color);
-    animation: flicker 1s infinite alternate;
-}
-
-@keyframes flicker {
-    0% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Pie de página */
 footer {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-family: 'Rennie Mackintosh', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
-/* Elementos gráficos */
-.geometrics {
-    background: repeating-linear-gradient(
-        45deg,
-        var(--secondary-color),
-        var(--secondary-color) 10px,
-        var(--primary-color) 10px,
-        var(--primary-color) 20px
-    );
-}
-
-.abstract-art {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    font-family: 'Rennie Mackintosh', sans-serif;
-}
-
-.pixel-art {
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--highlight-color);
-}
-
-/* Estilos adicionales para motivos visuales */
-.jazz-scenes {
-    background: var(--secondary-color);
-    color: var(--accent-color);
-}
-
-.male-style {
-    background: var(--accent-color);
-    color: var(--secondary-color);
-}
-
-.chandeliers, .classic-cars, .vintage-photos {
-    border: 2px solid var(--highlight-color);
-}
-
-/* Espaciado y dimensiones */
-.container {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.btn {
-    margin: 10px;
+footer p {
+    margin: 0;
 }
