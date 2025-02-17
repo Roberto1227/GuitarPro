@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #000000; /* Texto en negro para asegurar buen contraste */
+    color: #FFFFFF; /* Texto blanco para mejor contraste */
 }
 
 header .navbar-brand img {
@@ -13,24 +13,24 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(245, 245, 245, 0.9); /* Fondo claro con opacidad para contraste */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con mayor opacidad para mejor contraste */
     padding: 40px;
     border-radius: 10px;
 }
 
 .intro h1 {
     font-family: 'Black Han Sans', sans-serif;
-    color: #000000; /* Texto en negro */
+    color: #33364D; /* Texto en color oscuro */
     font-size: 3em;
 }
 
 .intro p {
     font-size: 1.2em;
-    color: #000000; /* Texto en negro para contraste */
+    color: #33364D; /* Texto en color oscuro */
 }
 
 .buttons .btn {
-    background-color: #8B4513; /* Color café vintage */
+    background-color: #6F9984; /* Color verde vintage */
     color: #FFFFFF; /* Texto blanco */
     border: none;
     padding: 10px 20px;
@@ -40,11 +40,11 @@ header .navbar-brand img {
 }
 
 .buttons .btn:hover {
-    background-color: #A0522D; /* Color de fondo más oscuro al pasar el mouse */
+    background-color: #4F6466; /* Color de fondo más oscuro al pasar el mouse */
 }
 
 footer {
-    background-color: #000000;
+    background-color: #33364D;
     color: #FFFFFF;
 }
 
