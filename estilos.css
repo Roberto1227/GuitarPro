@@ -1,7 +1,5 @@
 body {
-    background-image: url('ruta/a/tu/imagen.jpg'); /* Fondo de madera */
-    background-size: cover; /* La imagen cubre toda la página */
-    background-position: center; /* Centrado */
+    background-color: #6F4E37; /* Fondo café */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -10,24 +8,21 @@ header .navbar-brand img {
 }
 
 .intro {
-    background-color: rgba(107, 79, 55, 0.9); /* Fondo café combinable */
-    padding: 40px;
-    border-radius: 10px;
+    background-color: #F5F5F5; /* Fondo claro para contraste */
 }
 
 .intro h1 {
     font-family: 'Black Han Sans', sans-serif;
-    color: #FFFFFF; /* Texto en blanco para contraste */
+    color: #000000; /* Texto en negro */
     font-size: 3em;
 }
 
 .intro p {
     font-size: 1.2em;
-    color: #FFFFFF; /* Texto en blanco para contraste */
 }
 
 .buttons .btn {
-    background-color: #8B5E3C; /* Color café vintage */
+    background-color: #000000; /* Fondo negro */
     color: #FFFFFF; /* Texto blanco */
     border: none;
     padding: 10px 20px;
@@ -37,7 +32,7 @@ header .navbar-brand img {
 }
 
 .buttons .btn:hover {
-    background-color: #6E4A2E; /* Color de fondo más oscuro al pasar el mouse */
+    background-color: #333333; /* Color de fondo al pasar el mouse */
 }
 
 footer {
