@@ -1,89 +1,127 @@
-body {
-    background: linear-gradient(to bottom, #654321, #8B4513); /* Fondo marrón oscuro */
-    color: #fff; /* Texto blanco */
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
+/* Importar tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Broadway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rennie+Mackintosh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans+Pro:wght@400;700&display=swap');
+
+/* Variables de colores */
+:root {
+    --primary-color: #FFFFFF; /* Blanco */
+    --secondary-color: #000000; /* Negro */
+    --accent-color: #FFD700; /* Dorado */
+    --highlight-color: #FF0000; /* Rojo */
 }
 
-header {
-    background: #4B2E2E; /* Marrón oscuro */
-    padding: 20px 0;
-    border-bottom: 4px solid #DEB887; /* Marrón claro */
+/* Estilos generales */
+body, html {
+    font-family: 'Ropa Sans Pro', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.navbar-brand img {
-    height: 60px;
+/* Menú de navegación */
+.navbar {
+    background-color: var(--secondary-color);
 }
 
-.navbar-brand .navbar-nav .nav-link {
-    color: #DEB887; /* Marrón claro */
-    font-weight: bold;
-    font-size: 1.2rem;
+.nav-link {
+    font-family: 'Rennie Mackintosh', sans-serif;
+    color: var(--primary-color);
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #FFD700; /* Dorado */
+.nav-link:hover {
+    color: var(--highlight-color);
 }
 
+/* Contenido principal */
 .intro {
-    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    padding: 50px;
-    border: 2px solid #CD853F; /* Marrón vibrante */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
+    font-family: 'Broadway', sans-serif;
+    border: 3px solid var(--accent-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .intro h1 {
-    font-size: 3rem;
-    color: #000; /* Negro */
-    font-family: 'Black Han Sans', sans-serif; /* Nueva fuente robusta y llamativa */
-    text-shadow: 2px 2px 4px #CD853F; /* Sombra marrón */
-}
-
-.intro p {
-    font-size: 1.5rem;
-    color: #DEB887; /* Marrón claro */
+    color: var(--highlight-color);
 }
 
 .buttons .btn {
-    background-color: #CD853F; /* Marrón vibrante */
-    color: #fff;
-    border: 3px solid #FFD700; /* Borde dorado */
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
 }
 
 .buttons .btn:hover {
-    background-color: #FFD700; /* Dorado */
-    color: #4B2E2E; /* Marrón oscuro */
-    border: 3px solid #CD853F; /* Borde marrón vibrante */
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
 }
 
-footer {
-    background: #4B2E2E; /* Marrón oscuro */
-    color: #DEB887; /* Marrón claro */
-    padding: 20px 0;
-    border-top: 4px solid #DEB887; /* Marrón claro */
+/* Estilos para rayos animados */
+.lightning {
+    width: 50px;
+    height: 50px;
+    background: var(--highlight-color);
+    animation: flicker 1s infinite alternate;
 }
 
-footer p {
-    margin: 1;
-    font-size: 1rem;
-}
-
-@keyframes fall {
+@keyframes flicker {
     0% {
-        top: -300px;
-        opacity: 1;
+        opacity: 0.1;
     }
     100% {
-        top: 100vh;
-        opacity: 0;
+        opacity: 1;
     }
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: 'Rennie Mackintosh', sans-serif;
+}
+
+/* Elementos gráficos */
+.geometrics {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--secondary-color),
+        var(--secondary-color) 10px,
+        var(--primary-color) 10px,
+        var(--primary-color) 20px
+    );
+}
+
+.abstract-art {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-family: 'Rennie Mackintosh', sans-serif;
+}
+
+.pixel-art {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--highlight-color);
+}
+
+/* Estilos adicionales para motivos visuales */
+.jazz-scenes {
+    background: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.male-style {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.chandeliers, .classic-cars, .vintage-photos {
+    border: 2px solid var(--highlight-color);
+}
+
+/* Espaciado y dimensiones */
+.container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 10px;
 }
