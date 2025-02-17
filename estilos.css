@@ -1,11 +1,11 @@
 body {
     background-color: #CC6F57; /* Tono café clásico */
     font-family: 'Roboto', sans-serif;
-    background-image: url('imagen.avif'); /* URL de la imagen guardada en tu proyecto */
+    background-image: url('imagenes/imagen.avif'); /* URL de la imagen guardada en tu proyecto */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #FFFFFF; /* Texto blanco para asegurar buen contraste */
+    color: #ffffff; /* Texto blanco para asegurar buen contraste */
 }
 
 header .navbar-brand img {
