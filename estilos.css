@@ -19,7 +19,7 @@ header .navbar-brand img {
 }
 
 .title.bienvenidos {
-    font-family: 'ASTRID', sans-serif;
+    font-family: 'Lavish', sans-serif;
     font-size: 3em;
     font-weight: bold;
     color: #8B4513; /* Color café */
@@ -27,7 +27,7 @@ header .navbar-brand img {
 }
 
 .caminotexto {
-    font-family: 'ASTRID', sans-serif;
+    font-family: 'Lavish', sans-serif;
     font-size: 1.2em;
     color: #000000; /* Texto en negro para contraste */
 }
