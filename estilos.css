@@ -20,10 +20,14 @@ header .navbar-brand img {
 
 .title {
     font-family: 'Black Han Sans', sans-serif;
+    color: #A52A2A; /* Color café rojizo similar al texto ROCK */
     font-size: 3em;
     font-weight: bold;
-    color: #ffcc00; /* Color de la letra (amarillo similar) */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Sombra negra para imitar el borde */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para hacer el texto más llamativo */
+    background: linear-gradient(90deg, #A52A2A, #FFDD44, #A52A2A); /* Gradiente de color para franjas */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
 }
 
 .intro p {
