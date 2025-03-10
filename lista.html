@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordes Nivel Fácil</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    <div class="top-left-title">Acordes Fáciles</div>
+
+    <div class="banner" id="banner">
+        <img src="imagenes/Logo.png" alt="Logo">
+        <span>Guitar Pro</span>
+    </div>
+
+    <div class="container">
+        <div class="chord" id="C-chord">
+            <h2>Do (C)</h2>
+            <button onclick="playChord('C')">Escuchar Acorde</button>
+        </div>
+        <div class="chord" id="D-chord" style="display:none;">
+            <h2>Re (D)</h2>
+            <button onclick="playChord('D')">Escuchar Acorde</button>
+        </div>
+        <div class="chord" id="E-chord" style="display:none;">
+            <h2>Mi (E)</h2>
+            <button onclick="playChord('E')">Escuchar Acorde</button>
+        </div>
+        <div class="chord" id="A-chord" style="display:none;">
+            <h2>La (A)</h2>
+            <button onclick="playChord('A')">Escuchar Acorde</button>
+        </div>
+    </div>
+
+    <button id="prev-button" onclick="showPrevChord()">Atrás</button>
+    <button id="next-button" onclick="showNextChord()">Siguiente</button>
+    <div class="instructions" id="instructions"></div>
+    <div id="chord-image" style="text-align: center; margin-top: 20px;"></div>
+    <script>
+        let currentChord = 'C';
+        let audio = null;
+
+        function playSound(audioFile) {
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+            audio = new Audio('sonido/' + audioFile);
+            audio.play().catch(error => console.error("Error al reproducir el audio:", error));
+        }
+
+        function playChord(chord) {
+            const instructions = document.getElementById('instructions');
+            const chordImage = document.getElementById('chord-image');
+            const chordSteps = {
+                'C': {
+                    file: 'DO.mp3',
+                    steps: `<h2>Pasos para el acorde de Do (C)</h2>
+                            <p>1. Coloca el dedo anular en el tercer traste de la quinta cuerda.</p>
+                            <p>2. Coloca el dedo corazón en el segundo traste de la cuarta cuerda.</p>
+                            <p>3. Coloca el dedo índice en el primer traste de la segunda cuerda.</p>
+                            <p>4. Asegúrate de que el pulgar apenas asoma por la parte trasera.</p>`,
+                    image: 'Acordes/DoMayor copy.png'
+                },
+                'D': {
+                    file: 'Re.mp3',
+                    steps: `<h2>Pasos para el acorde de Re (D)</h2>
+                            <p>1. Índice en la cuerda 3 del traste 2.</p>
+                            <p>2. Anular en la cuerda 2 del traste 3.</p>
+                            <p>3. Corazón en la cuerda 1 del traste 2.</p>
+                            <p>4. A partir de la cuarta cuerda hacia abajo, tocar las cuerdas con la mano derecha.</p>`,
+                    image: 'Acordes/ReMayor.png'
+                },
+                'E': {
+                    file: 'Mi.mp3',
+                    steps: `<h2>Pasos para el acorde de Mi (E)</h2>
+                            <p>1. Primer dedo índice en el primer traste de la tercera cuerda.</p>
+                            <p>2. Segundo dedo corazón en el segundo traste de la quinta cuerda.</p>
+                            <p>3. Tercer dedo anular en el segundo traste de la cuarta cuerda.</p>`,
+                    image: 'Acordes/MiMayor.png'
+                },
+                'A': {
+                    file: 'La.mp3',
+                    steps: `<h2>Pasos para el acorde de La (A)</h2>
+                            <p>1. Primer dedo índice en el segundo traste de la cuarta cuerda.</p>
+                            <p>2. Segundo dedo corazón en el segundo traste de la tercera cuerda.</p>
+                            <p>3. Tercer dedo anular en el segundo traste de la segunda cuerda.</p>`,
+                    image: 'Acordes/LaMayor.png'
+                }
+            };
+
+            playSound(chordSteps[chord].file);
+            instructions.style.display = 'block';
+            instructions.innerHTML = chordSteps[chord].steps;
+
+            chordImage.innerHTML = chordSteps[chord].image
+                ? `<img src="${chordSteps[chord].image}" alt="Acorde ${chord}">`
+                : '';
+        }
+
+        function changeChord(step) {
+            const chords = ['C', 'D', 'E', 'A'];
+            let currentIndex = chords.indexOf(currentChord);
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+            currentIndex += step;
+            if (currentIndex >= 0 && currentIndex < chords.length) {
+                document.getElementById(currentChord + '-chord').style.display = 'none';
+                currentChord = chords[currentIndex];
+                document.getElementById(currentChord + '-chord').style.display = 'block';
+                document.getElementById('instructions').style.display = 'none';
+                document.getElementById('chord-image').innerHTML = '';
+            } else {
+                alert('No hay más acordes disponibles.');
+            }
+
+            document.getElementById('prev-button').style.display = currentIndex > 0 ? 'block' : 'none';
+            document.getElementById('next-button').style.display = currentIndex < chords.length - 1 ? 'block' : 'none';
+        }
+
+        function showNextChord() {
+            changeChord(1);
+        }
+
+        function showPrevChord() {
+            changeChord(-1);
+        }
+    </script>
+    <script>
+        document.addEventListener('scroll', function() {
+            const banner = document.getElementById('banner');
+            if (window.scrollY > 0) {
+                banner.style.display = 'none';
+            } else {
+                banner.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
