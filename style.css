@@ -327,6 +327,15 @@ p {
     gap: 20px; /* Espaciado entre la imagen y el texto */
     padding: 20px; /* Añade un poco de espacio interno */
 }
+.social-icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 18px; /* Tamaño del icono */
+    color: #FFFDFC; /* Color del icono */
+}
+
+.social-icon:hover {
+    color: #CE967B; /* Cambia el color al pasar el mouse */
+}
 
 .link {
     text-align: center; /* Centra el texto y los enlaces dentro del bloque */
@@ -363,4 +372,16 @@ p {
         margin-bottom: 15px;
         transition: color 0.3s ease;
     }
+    }
+    .footer .link ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFDFC; /* Texto blanco para los enlaces */
+        display: block;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+    }
+    
+    .footer .link ul li a:hover {
+        color: #CE967B; /* Mantengo el color al pasar el ratón */
     }
