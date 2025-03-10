@@ -303,18 +303,6 @@ p {
     margin-bottom: 10px;
 }
 
-.footer .link ul li a {
-    font-size: 16px;
-<<<<<<< HEAD:style.css
-    color:#C5C5C5;
-    display: block;
-    margin-bottom: 15px;
-}
-=======
-    color: #C5C5C5;
-    transition: color 0.3s ease;
-}
-
 .footer .link ul li a:hover {
     color: #CE967B;
 }
@@ -368,5 +356,11 @@ p {
     width: 350px; /* Tamaño grande pero proporcionado */
     height: auto; /* Mantén las proporciones */
     flex-shrink: 0; /* Evita que la imagen se reduzca */
-}
->>>>>>> ea1d0717710d92fa5412380e2f22bb50b8eec004:index_style.css
+    footer .link ul li a {
+        font-size: 16px;
+        color: #C5C5C5;
+        display: block;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+    }
+    }
