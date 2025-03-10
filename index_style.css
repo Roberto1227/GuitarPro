@@ -319,3 +319,47 @@ p {
     color: #FFFDFC;
     max-width: 600px;
 }
+.social-container {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Imagen a la derecha, enlaces a la izquierda */
+    align-items: center; /* Alinea todo verticalmente */
+    padding: 20px; /* Añade espacio interno al contenedor */
+}
+
+.social-container {
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente los elementos en el mismo nivel */
+    justify-content: center; /* Centra todo en el contenedor del pie de página */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    padding: 20px; /* Añade un poco de espacio interno */
+}
+
+.link {
+    text-align: center; /* Centra el texto y los enlaces dentro del bloque */
+}
+
+.link h2 {
+    margin-bottom: 15px; /* Espaciado entre el título y los enlaces */
+}
+
+.link ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Limpia el padding */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.link ul li {
+    margin-bottom: 10px; /* Espaciado entre los enlaces */
+}
+
+.link ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #000; /* Color del texto */
+}
+
+.mascota-icono {
+    width: 350px; /* Tamaño grande pero proporcionado */
+    height: auto; /* Mantén las proporciones */
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
