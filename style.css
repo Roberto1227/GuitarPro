@@ -314,48 +314,48 @@ p {
     max-width: 600px;
 }
 .social-container {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-between; /* Imagen a la derecha, enlaces a la izquierda */
-    align-items: center; /* Alinea todo verticalmente */
-    padding: 20px; /* Añade espacio interno al contenedor */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
 }
 
 .social-container {
-    display: flex; /* Activa Flexbox */
-    align-items: center; /* Alinea verticalmente los elementos en el mismo nivel */
-    justify-content: center; /* Centra todo en el contenedor del pie de página */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
-    padding: 20px; /* Añade un poco de espacio interno */
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .link {
-    text-align: center; /* Centra el texto y los enlaces dentro del bloque */
+    text-align: center; 
 }
 
 .link h2 {
-    margin-bottom: 15px; /* Espaciado entre el título y los enlaces */
+    margin-bottom: 15px; 
 }
 
 .link ul {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0; /* Limpia el padding */
-    margin: 0; /* Elimina márgenes adicionales */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .link ul li {
-    margin-bottom: 10px; /* Espaciado entre los enlaces */
+    margin-bottom: 10px; 
 }
 
 .link ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 16px; /* Ajusta el tamaño del texto */
-    color: #000; /* Color del texto */
+    text-decoration: none; 
+    font-size: 16px;
+    color: #000; 
 }
 
 .mascota-icono {
-    width: 350px; /* Tamaño grande pero proporcionado */
-    height: auto; /* Mantén las proporciones */
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    width: 350px; 
+    height: auto; 
+    flex-shrink: 0;
     footer .link ul li a {
         font-size: 16px;
         color: #C5C5C5;

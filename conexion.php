@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Cambiar a la configuración de tu servidor
-$user = "root"; // Usuario de tu servidor MySQL
-$password = ""; // Contraseña de tu servidor MySQL
-$database = "guitarpro";
+$host = "localhost"; 
+$user = "root"; 
+$password = ""; 
+$database = "guitarpro";//Nombre de base de datos
 
 $conn = new mysqli($host, $user, $password, $database);
 
