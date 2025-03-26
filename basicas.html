@@ -3,45 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - GuitarPro</title>
+    <title>Lecciones Básicas - GuitarPro</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lecciones.css">
+    <link rel="stylesheet" href="modalbasico.css">
 </head>
-
 <body>
-    <!-- Menú -->
+   
     <header class="header">
         <div class="menu container">
             <a href="index.html" class="logo">
                 <img src="imagenes/logo.png" alt="GuitarPro" style="height: 70px; vertical-align: middle;">
                 GuitarPro
             </a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="imagenes/menu.png" class="menu-icono" alt="">
-            </label>
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="Lecciones.html">Lecciones</a></li>
                     <li><a href="#">Galería</a></li>
-                    <li class="login"><a href="registro_login.html">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
-
-        <div class="header-content container">
-            <h1>GuitarPro</h1>
-            <p>¡La mejor página web donde aprenderás a tocar guitarra de manera fácil, divertida y sin salir de casa!</p>
-            <a href="#" class="btn-1">Información</a>
-        </div>
     </header>
 
+    <section class="lecciones">
+        <h2>Lecciones Básicas de Guitarra</h2>
+        <div class="tarjetas-container">
+           
+            <div class="tarjeta">
+                <img src="imagenes/acordes_mayores1.jpg" alt="Acordes Mayores Parte 1">
+                <h3>Acordes Mayores Parte 1 (Do, Re, Mi, La)</h3>
+                <p>Aprende a tocar acordes mayores de forma sencilla.</p>
+                <button class="btn-2" data-modal="mayores1">Aprender</button>
+            </div>
+          
+            <div class="tarjeta">
+                <img src="imagenes/acordes_mayores2.jpg" alt="Acordes Mayores Parte 2">
+                <h3>Acordes Mayores Parte 2 (Sol, Si, Fa)</h3>
+                <p>Continúa tu aprendizaje con más acordes mayores.</p>
+                <button class="btn-2" data-modal="mayores2">Aprender</button>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="imagenes/acordes_menores1.jpg" alt="Acordes Menores Parte 1">
+                <h3>Acordes Menores Parte 1 (Do, Re, Mi, La)</h3>
+                <p>Descubre cómo tocar acordes menores con facilidad.</p>
+                <button class="btn-2" data-modal="menores1">Aprender</button>
+            </div>
+         
+            <div class="tarjeta">
+                <img src="imagenes/acordes_menores2.jpg" alt="Acordes Menores Parte 2">
+                <h3>Acordes Menores Parte 2 (Sol, Si, Fa)</h3>
+                <p>Avanza con más acordes menores y mejora tus técnicas.</p>
+                <button class="btn-2" data-modal="menores2">Aprender</button>
+            </div>
+          
+            <div class="tarjeta">
+                <img src="imagenes/acordes_7_1.jpg" alt="Acordes de 7 Parte 1">
+                <h3>Acordes de 7 Parte 1 (Do, Re, Mi, La)</h3>
+                <p>Explora los acordes de séptima y su sonido característico.</p>
+                <button class="btn-2" data-modal="acordes71">Aprender</button>
+            </div>
+           
+            <div class="tarjeta">
+                <img src="imagenes/acordes_7_2.jpg" alt="Acordes de 7 Parte 2">
+                <h3>Acordes de 7 Parte 2 (Sol, Si, Fa)</h3>
+                <p>Finaliza tu aprendizaje con los acordes de séptima restantes.</p>
+                <button class="btn-2" data-modal="acordes72">Aprender</button>
+            </div>
+        </div>
+    </section>
 
 
-    
-    <!-- Pie de página -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Do Mayor</h2>
+            <button class="close-btn" id="closeModal" aria-label="Cerrar modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>Aquí irá el contenido dinámico.</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-2" id="prevBtn">Anterior</button>
+            <button class="btn-2" id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+</div>
+
+
     <footer class="footer">
         <div class="social-container">
             <div class="link">
@@ -68,5 +118,7 @@
             <img src="imagenes/Mascota (1).png" alt="Mascota" class="mascota-icono">
         </div>
     </footer>
+
+    <script src="basico.js" defer></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 $host = "localhost"; 
 $user = "root"; 
 $password = ""; 
-$database = "guitarpro";//Nombre de base de datos
+$database = "guitarpro";
 
 $conn = new mysqli($host, $user, $password, $database);
 

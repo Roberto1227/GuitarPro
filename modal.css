@@ -25,7 +25,7 @@
     position: relative;
 }
 
-/* Header de la modal */
+
 .modal-header {
     background-color: #92471f; /* Color de fondo del encabezado */
     color: #FFF; /* Cambiar el título a blanco */
@@ -36,13 +36,13 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    border-radius: 5px; /* Menos redondeado que antes */
+    border-radius: 5px; 
 }
 
 .modal-header h2 {
-    font-size: 20px; /* Reducir el tamaño del texto del título */
+    font-size: 20px; 
     margin: 0;
-    color: #FFF; /* Asegurar que el título sea blanco */
+    color: #FFF; 
 }
 
 .close-btn {
@@ -66,11 +66,10 @@
     outline: none; 
     box-shadow: 0 0 5px #CE967b; 
 }
-/* Cuerpo de la modal */
+
 .modal-body {
     padding: 20px;
-    overflow-y: auto; /* Scroll si el contenido supera el espacio */
-    flex-grow: 1;
+    overflow-y: auto; 
 }
 
 /* Estilo para la barra de desplazamiento (scrollbar) */
@@ -101,7 +100,7 @@
 
 .modal-body img {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -137,7 +136,7 @@
     bottom: 0;
 }
 
-/* Botón "Siguiente" dentro de la modal */
+
 #nextBtn {
     position: absolute;
     bottom: 15px;
